@@ -1,14 +1,24 @@
 # .find
 
 1. What does `.find` do?
+- Returns first element that is true for a certain condition within an array.
 2. Is the original array modified?
+- No.
 3. How many arguments does `.find` take?
+- One required and three additional optional.
 4. How many arguments does the _callback function_ take?
+- 
 5. Which arguments are required (for both the method and its callback)?
+- 
 6. Does the callback need a return value? If so, what needs to be returned?
+- Boolean
 
 ## Example 1:
 Given an array of countries, write a function that returns the first listed country in North America
+
+countries.find(function(country) {
+  return country.continentName === 'North America'
+})
 
 Ex:
 
